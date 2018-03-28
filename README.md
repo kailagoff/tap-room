@@ -1,6 +1,15 @@
 # TapRoom
 
+#### _By Kaila Goff, Maggie Summers_
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
+## Description
+
+_A fictional Tap Room where a user can view a list of kegs and pints available. An employee is able to edit and delete the keg. They are also able to subtract a pint from the keg whenever a pint is sold._
+
+<kbd><img src="src/img/screenshot.png" alt=""></kbd>
+
 
 ## Development server
 
@@ -25,3 +34,24 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Known Bugs
+
+  * _No known bugs at this time._
+
+## Support and contact details
+
+  _To suggest changes, submit a pull request in the GitHub repository._
+
+## Technologies Used
+
+  * HTML
+  * JavaScript
+  * NPM
+  * Angular
+
+### License
+
+  *MIT License*
+
+Copyright (c) 2018 **Kaila Goff, Maggie Summers**
