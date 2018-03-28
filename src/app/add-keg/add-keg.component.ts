@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Keg } from '../models/keg.model'
 
 @Component({
@@ -7,6 +7,7 @@ import { Keg } from '../models/keg.model'
   styleUrls: ['./add-keg.component.css']
 })
 export class AddKegComponent {
+  @Input() show: submitForm;
   @Output() sendKeg = new EventEmitter();
 
   submitForm(name: string, brand: string, price: string, alcoholContent: string) {

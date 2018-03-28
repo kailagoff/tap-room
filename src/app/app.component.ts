@@ -9,6 +9,9 @@ import { Keg } from './models/keg.model'
 
 export class AppComponent {
   title = 'Tap Room';
+  public show:boolean = false;
+  public buttonName = 'Show';
+
 
   masterKegsList: Keg[] = [
     new Keg("Fuzztail", "Sunriver", 5, 5.0),
@@ -33,5 +36,15 @@ export class AppComponent {
     let index = this.masterKegsList.indexOf(this.selectedKeg);
     this.masterKegsList.splice(index, 1);
     this.selectedKeg = null;
+  }
+
+  toggle() {
+  this.show = !this.show;
+  console.log(this.show);
+  if(this.show) {
+    this.buttonName = "Hide";
+    } else {
+    this.buttonName = "Show";
+    }
   }
 }
