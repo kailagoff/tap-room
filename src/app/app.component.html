@@ -5,9 +5,12 @@
 </div>
   <div class="container">
     <app-keg-list [childKegsList]="masterKegsList" (clickSender)="editKeg($event)"></app-keg-list>
+
     <button (click)="toggle()">{{buttonName}}</button>
+
     <div *ngIf="show === true">
       <app-add-keg (sendKeg)="addKeg($event)"></app-add-keg>
     </div>
+
     <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()" (clickedDelete)="deleteRecipe()"></app-edit-keg>
   </div>

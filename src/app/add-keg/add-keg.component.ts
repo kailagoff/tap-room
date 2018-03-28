@@ -9,9 +9,14 @@ import { Keg } from '../models/keg.model'
 export class AddKegComponent {
   @Input() show: submitForm;
   @Output() sendKeg = new EventEmitter();
+  @Output() clickedDone = new EventEmitter();
 
   submitForm(name: string, brand: string, price: string, alcoholContent: string) {
     let newKeg: Keg = new Keg(name, brand, parseInt(price), parseInt(alcoholContent));
     this.sendKeg.emit(newKeg);
+  }
+
+  finishedEditing() {
+    this.clickedDone.emit();
   }
 }

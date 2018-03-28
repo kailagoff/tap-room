@@ -10,7 +10,7 @@ import { Keg } from './models/keg.model'
 export class AppComponent {
   title = 'Tap Room';
   public show:boolean = false;
-  public buttonName = 'Show';
+  public buttonName = 'Add Keg';
 
 
   masterKegsList: Keg[] = [
@@ -40,11 +40,11 @@ export class AppComponent {
 
   toggle() {
   this.show = !this.show;
-  console.log(this.show);
+
   if(this.show) {
     this.buttonName = "Hide";
     } else {
-    this.buttonName = "Show";
+    this.buttonName = "Add Keg";
     }
   }
 }
