@@ -1,4 +1,4 @@
-<div *ngIf="childSelectedKeg">
+<div *ngIf=childSelectedKeg>
   <h3>{{childSelectedKeg.name}}</h3>
   <label>Enter Beer Name:</label>
   <input [(ngModel)]="childSelectedKeg.name">
@@ -11,6 +11,6 @@
   <h3>{{childSelectedKeg.alcoholContent}}</h3>
   <label>Enter Beer Alcohol Content:</label>
   <input [(ngModel)]="childSelectedKeg.alcoholContent">
-  <button type="submit" (click)="finishedEditing()">Done</button>
   <button type="submit" (click)="deleteRecipe()">Delete</button>
+  <button type="submit" (click)="finishedEditing()">Done</button>
 </div>

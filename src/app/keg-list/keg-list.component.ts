@@ -8,15 +8,16 @@ import { Keg } from '../models/keg.model'
 })
 export class KegListComponent {
   @Input() childKegsList: Keg[];
+  @Input() childSelectedKeg: Keg;
   @Output() clickSender = new EventEmitter();
-  @Output() click = new EventEmitter();
+  @Output() clickPint = new EventEmitter();
 
   editButtonClicked(kegToEdit: Keg) {
-  this.clickSender.emit(kegToEdit);
+    this.clickSender.emit(kegToEdit);
   }
 
-  toggle(){
-  this.click.emit();
+  editPintClicked(pintToEdit) {
+    this.clickPint.emit(pintToEdit);
   }
 
 }

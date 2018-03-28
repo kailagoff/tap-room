@@ -6,6 +6,7 @@ import { Keg } from '../models/keg.model';
   templateUrl: './edit-keg.component.html',
   styleUrls: ['./edit-keg.component.css']
 })
+
 export class EditKegComponent {
   @Input() childSelectedKeg: Keg;
   @Output() clickedDone = new EventEmitter();

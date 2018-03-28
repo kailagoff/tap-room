@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Tap Room';
   public show:boolean = false;
   public buttonName = 'Add Keg';
-
+  public kegForPints = null;
 
   masterKegsList: Keg[] = [
     new Keg("Fuzztail", "Sunriver", 5, 5.0),
@@ -22,10 +22,17 @@ export class AppComponent {
 
   addKeg(newKeg: Keg) {
     this.masterKegsList.push(newKeg);
+    this.show = !this.show;
   }
 
   editKeg(clickedKeg) {
     this.selectedKeg = clickedKeg;
+  }
+
+  editPints(clickedKeg) {
+    this.kegForPints = clickedKeg;
+    this.kegForPints.pints--;
+
   }
 
   finishedEditing() {
@@ -42,7 +49,7 @@ export class AppComponent {
   this.show = !this.show;
 
   if(this.show) {
-    this.buttonName = "Hide";
+    this.buttonName = "Add Keg";
     } else {
     this.buttonName = "Add Keg";
     }
