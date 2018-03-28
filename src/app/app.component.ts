@@ -29,4 +29,9 @@ export class AppComponent {
     this.selectedKeg = null;
   }
 
+  deleteRecipe() {
+    let index = this.masterKegsList.indexOf(this.selectedKeg);
+    this.masterKegsList.splice(index, 1);
+    this.selectedKeg = null;
+  }
 }

@@ -6,5 +6,5 @@
   <div class="container">
     <app-keg-list [childKegsList]="masterKegsList" (clickSender)="editKeg($event)"></app-keg-list>
     <app-add-keg (sendKeg)="addKeg($event)"></app-add-keg>
-    <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()"></app-edit-keg>
+    <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()" (clickedDelete)="deleteRecipe()"></app-edit-keg>
   </div>
