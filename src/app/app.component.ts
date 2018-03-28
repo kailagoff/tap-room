@@ -21,4 +21,12 @@ export class AppComponent {
     this.masterKegsList.push(newKeg);
   }
 
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
+  }
+
+  finishedEditing() {
+    this.selectedKeg = null;
+  }
+
 }
