@@ -20,10 +20,20 @@ export class KegListComponent {
     this.clickPint.emit(pintToEdit);
   }
 
-  kegColor(keg) {
+  kegColorPrice(keg) {
     if (keg.price == 3) {
       return "bg-info";
     } else if (keg.price == 5) {
+      return "bg-warning";
+    } else {
+      return "bg-danger";
+    }
+  }
+
+  kegColorABV(keg) {
+    if (keg.alcoholContent <= 3) {
+      return "bg-info";
+    } else if (keg.alcoholContent <= 5) {
       return "bg-warning";
     } else {
       return "bg-danger";

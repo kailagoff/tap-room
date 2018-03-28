@@ -11,11 +11,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr [class]="kegColor(keg)" *ngFor="let keg of childKegsList">
+    <tr *ngFor="let keg of childKegsList">
       <td>{{keg.name}}</td>
       <td>{{keg.brand}}</td>
-      <td>${{keg.price}}.00</td>
-      <td>{{keg.alcoholContent}}%</td>
+      <td [class]="kegColorPrice(keg)">${{keg.price}}.00</td>
+      <td [class]="kegColorABV(keg)">{{keg.alcoholContent}}%</td>
       <td>{{keg.pints}}<button (click)="editPintClicked(keg)">Subtract a Pint</button></td>
       <td><button (click)="editButtonClicked(keg)">Edit This Keg</button></td>
     </tr>
