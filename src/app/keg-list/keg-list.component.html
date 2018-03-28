@@ -1,6 +1,21 @@
-<div class="kegs-list">
-  <h2>Current Beers Available:</h2>
-  <ul>
-    <li *ngFor="let keg of childKegsList">{{ keg.name}}, {{keg.brand}}, ${{keg.price}}, {{keg.alcoholContent}}%     <button (click)="editButtonClicked(keg)">Edit This Keg</button></li>
-  </ul>
-</div>
+<h2>Current Beers Available:</h2>
+<table class="table table-hover" id="keg-list">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Price</th>
+      <th scope="col">Alcohol Content</th>
+      <th scope="col">Edit Beer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let keg of childKegsList">
+      <td>{{keg.name}}</td>
+      <td>{{keg.brand}}</td>
+      <td>${{keg.price}}.00</td>
+      <td>{{keg.alcoholContent}}%</td>
+      <td><button (click)="editButtonClicked(keg)">Edit This Keg</button></td>
+    </tr>
+  </tbody>
+</table>
