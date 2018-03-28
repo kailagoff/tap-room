@@ -21,9 +21,9 @@ export class KegListComponent {
   }
 
   kegColorPrice(keg) {
-    if (keg.price == 3) {
+    if (keg.price <= 3) {
       return "bg-info";
-    } else if (keg.price == 5) {
+    } else if (keg.price <= 5) {
       return "bg-warning";
     } else {
       return "bg-danger";

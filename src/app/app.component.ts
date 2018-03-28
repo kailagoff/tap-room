@@ -12,6 +12,7 @@ export class AppComponent {
   public show:boolean = false;
   public buttonName = 'Add Keg';
   public kegForPints = null;
+  public selectedKeg = null;
 
   masterKegsList: Keg[] = [
     new Keg("Fuzztail", "Sunriver", 5, 5.0),
@@ -54,6 +55,4 @@ export class AppComponent {
     this.buttonName = "Add Keg";
     }
   }
-
-
 }

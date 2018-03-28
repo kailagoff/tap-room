@@ -1,16 +1,20 @@
-<div *ngIf=childSelectedKeg>
-  <h3>{{childSelectedKeg.name}}</h3>
-  <label>Enter Beer Name:</label>
-  <input [(ngModel)]="childSelectedKeg.name">
-  <h3>{{childSelectedKeg.brand}}</h3>
-  <label>Enter Beer Brand:</label>
-  <input [(ngModel)]="childSelectedKeg.brand">
-  <h3>{{childSelectedKeg.price}}</h3>
-  <label>Enter Beer Price:</label>
-  <input [(ngModel)]="childSelectedKeg.price">
-  <h3>{{childSelectedKeg.alcoholContent}}</h3>
-  <label>Enter Beer Alcohol Content:</label>
-  <input [(ngModel)]="childSelectedKeg.alcoholContent">
-  <button type="submit" (click)="deleteRecipe()">Delete</button>
-  <button type="submit" (click)="finishedEditing()">Done</button>
+<div style="text-align:center">
+  <div id="edit-keg">
+    <div *ngIf=childSelectedKeg>
+      <h4>{{childSelectedKeg.name}}</h4>
+      <label>Edit Beer Name:</label>
+      <input [(ngModel)]="childSelectedKeg.name">
+      <h4>{{childSelectedKeg.brand}}</h4>
+      <label>Edit Beer Brand:</label>
+      <input [(ngModel)]="childSelectedKeg.brand">
+      <h4>${{childSelectedKeg.price}}.00</h4>
+      <label>Edit Beer Price:</label>
+      <input [(ngModel)]="childSelectedKeg.price">
+      <h4>{{childSelectedKeg.alcoholContent}}%</h4>
+      <label>Edit Beer Alcohol Content:</label>
+      <input [(ngModel)]="childSelectedKeg.alcoholContent">
+      <button type="submit" (click)="finishedEditing()">Done</button>
+      <button type="submit" (click)="deleteRecipe()">Delete</button>
+    </div>
+  </div>
 </div>
