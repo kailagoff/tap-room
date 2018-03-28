@@ -1,7 +1,9 @@
-<div class="jumbotron text-align:center">
-  <h1>Welcome to our {{title}}</h1>
+<div style="text-align:center">
+  <div class="jumbotron">
+    <h1>Welcome to Our {{title}}!</h1>
+  </div>
 </div>
-<div class="container">
-  <app-keg-list [childKegsList]="masterKegsList"></app-keg-list>
-  <app-add-keg (sendKeg)="addKeg($event)"></app-add-keg>
-</div>
+  <div class="container">
+    <app-keg-list [childKegsList]="masterKegsList"></app-keg-list>
+    <app-add-keg (sendKeg)="addKeg($event)"></app-add-keg>
+  </div>
