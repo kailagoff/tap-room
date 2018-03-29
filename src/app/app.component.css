@@ -4,3 +4,10 @@
    color: white;
    font-family: 'Montserrat', sans-serif;
 }
+
+#addKegBtn {
+  float:right;
+  display:block;
+  margin-right:0px;
+  clear:left;
+}

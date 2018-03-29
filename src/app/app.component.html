@@ -4,9 +4,9 @@
   </div>
 </div>
   <div class="container">
+    <button (click)="toggle()" id="addKegBtn">{{buttonName}}</button>
     <app-keg-list [childKegsList]="masterKegsList" (clickSender)="editKeg($event)" [childSelectedKeg]="selectedKeg" (clickPint)="editPints($event)"></app-keg-list>
 
-    <button (click)="toggle()">{{buttonName}}</button>
 
     <div *ngIf="show === true">
       <app-add-keg (sendKeg)="addKeg($event)"></app-add-keg>

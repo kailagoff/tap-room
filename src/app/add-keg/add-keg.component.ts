@@ -7,7 +7,6 @@ import { Keg } from '../models/keg.model'
   styleUrls: ['./add-keg.component.css']
 })
 export class AddKegComponent {
-  // @Input() show: submitForm;
   @Output() sendKeg = new EventEmitter();
   @Output() clickedDone = new EventEmitter();
 
