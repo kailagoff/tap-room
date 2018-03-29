@@ -20,3 +20,15 @@
   background-color: #990000;
   color: white;
 }
+
+.progress-bar-full {
+  background-color: green;
+}
+
+.progress-bar-mid {
+  background-color: orange;
+}
+
+.progress-bar-empty {
+  background-color: red;
+}

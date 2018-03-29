@@ -39,4 +39,9 @@ export class KegListComponent {
       return "highPrice";
     }
   }
+
+  returnPercentage(kegToCalculate: Keg) {
+    return (kegToCalculate.pints / 124 * 100) + "%";
+  }
+
 }
