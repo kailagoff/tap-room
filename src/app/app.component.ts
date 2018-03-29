@@ -15,9 +15,9 @@ export class AppComponent {
   public selectedKeg = null;
 
   masterKegsList: Keg[] = [
-    new Keg("Fuzztail", "Sunriver", 5, 5),
-    new Keg("Mosaic Pale", "Backwoods", 6, 4.7),
-    new Keg("Tarty to the Party", "Wild Ride", 6, 6.3),
+    new Keg("Fuzztail", "Sunriver", 3, 2.7),
+    new Keg("Mosaic Pale", "Backwoods", 5, 6.3),
+    new Keg("Tarty to the Party", "Wild Ride", 6, 4.7),
     new Keg("Full of Fire", "Wayfinder", 9, 7)
   ];
 

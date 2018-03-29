@@ -22,21 +22,21 @@ export class KegListComponent {
 
   kegColorPrice(keg) {
     if (keg.price <= 3) {
-      return "bg-info";
+      return "lowPrice";
     } else if (keg.price <= 5) {
-      return "bg-warning";
+      return "midPrice";
     } else {
-      return "bg-danger";
+      return "highPrice";
     }
   }
 
   kegColorABV(keg) {
     if (keg.alcoholContent <= 3) {
-      return "bg-info";
+      return "lowPrice";
     } else if (keg.alcoholContent <= 5) {
-      return "bg-warning";
+      return "midPrice";
     } else {
-      return "bg-danger";
+      return "highPrice";
     }
   }
 }

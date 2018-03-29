@@ -5,3 +5,18 @@
 #style {
    font-family: 'Cardo', serif;
 }
+
+.lowPrice {
+  background-color: #FF0066;
+  color: white;
+}
+
+.midPrice {
+  background-color: #FF3333;
+  color: white;
+}
+
+.highPrice {
+  background-color: #990000;
+  color: white;
+}
