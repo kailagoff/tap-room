@@ -17,9 +17,9 @@
       <tr *ngFor="let keg of childKegsList">
         <td>{{keg.name}}</td>
         <td>{{keg.brand}}</td>
-        <td [class]="kegColorPrice(keg)">${{keg.price}}.00</td>
+        <td [class]="kegColorPrice(keg)">{{keg.price | currency}}</td>
         <td [class]="kegColorABV(keg)">{{keg.alcoholContent}}%</td>
-        <td>{{keg.pints}} <button (click)="editPintClicked(keg)"> - </button></td>
+        <td> <button (click)="editPintClicked(keg)"> - </button> {{keg.pints}}</td>
         <td><button (click)="editButtonClicked(keg)">Edit This Keg</button></td>
       </tr>
     </tbody>
