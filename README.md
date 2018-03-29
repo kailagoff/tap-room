@@ -12,8 +12,10 @@ _A fictional Tap Room where a user can view a list of kegs and pints available. 
 
 
 ## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Type `npm install` from the terminal to install Webpack and its dependencies.
+Run `ng serve` for a dev server. 
+Navigate to `http://localhost:4200/`. 
+The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
