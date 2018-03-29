@@ -8,13 +8,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 _A fictional Tap Room where a user can view a list of kegs and pints available. An employee is able to edit and delete the keg. They are also able to subtract a pint from the keg whenever a pint is sold._
 
-<kbd><img src="src/img/screenshot.png" alt=""></kbd>
+<kbd><img src="src/img/screenshot1.png" alt=""></kbd>
 
 
 ## Development server
 Type `npm install` from the terminal to install Webpack and its dependencies.
-Run `ng serve` for a dev server. 
-Navigate to `http://localhost:4200/`. 
+Run `ng serve` for a dev server.
+Navigate to `http://localhost:4200/`.
 The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
