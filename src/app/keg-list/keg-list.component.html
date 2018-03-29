@@ -18,7 +18,7 @@
         <td>{{keg.name}}</td>
         <td>{{keg.brand}}</td>
         <td [class]="kegColorPrice(keg)">{{keg.price | currency}}</td>
-        <td [class]="kegColorABV(keg)">{{keg.alcoholContent}}%</td>
+        <td [class]="kegColorABV(keg)">{{(keg.alcoholContent / 100) | percent:'1.1'}}</td>
         <td> <button (click)="editPintClicked(keg)"> - </button> {{keg.pints}}</td>
         <td><button (click)="editButtonClicked(keg)">Edit This Keg</button></td>
       </tr>
