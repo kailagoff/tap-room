@@ -1,6 +1,6 @@
 # TapRoom
 
-#### _By Kaila Goff, Maggie Summers_
+#### _By Kaila Goff & Maggie Summers_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
